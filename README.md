@@ -35,14 +35,16 @@ I received a Dell PowerEdge R630 server from a friend and decided to leverage it
 
 ## Project Plan
 
-### 1. Install the Operating System
+### 1. Prepare the Environment
 
-- Download and install Ubuntu Server on the Dell PowerEdge R630.
+- Buy a long enough patch cable: Done
+- Access iDRAC for the server on my home network: Done
+- Access virtual console - troubleshooting opening jnlp file with iced tea web
+  
+### 2. Install the Operating System
+
+- Use iDRAC to Download and install Ubuntu Server on the Dell PowerEdge R630.
 - Ensure all system updates are applied.
-
-### 2. Prepare the Environment
-
-- Decide whether to develop locally, on the server using vim, or remotely on the server though setting up iDRAC.
 
 ### 3. Install Required Libraries
 
