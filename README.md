@@ -12,8 +12,8 @@ I received a Dell PowerEdge R630 server from a friend and decided to leverage it
 
 - **Server:** Dell PowerEdge R630
   - **CPU:** Dual Intel Xeon E5-2600 v3/v4 processors
-  - **Memory:** Up to 1.5TB DDR4 RAM (adjust based on available hardware)
-  - **Storage:** Configurable SSDs/HDDs
+  - **Memory:** 96 GB
+  - **Storage:** 600 GB
 - **Microphone and Speakers:** For voice input and output
 
 ## Software
@@ -26,6 +26,12 @@ I received a Dell PowerEdge R630 server from a friend and decided to leverage it
 - **Python Libraries:**
   - PyAudio (for audio input/output)
   - gTTS (for text-to-speech)
+ 
+## Road blocks
+
+- Need to buy a longer patch cable so I can use iDRAC over the network.
+- Need to solve a mismatched PSU issue (suspect firmware)
+- Booting from USB failed, the server did not recognize the bootable media
 
 ## Project Plan
 
