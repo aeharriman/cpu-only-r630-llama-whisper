@@ -35,16 +35,20 @@ I received a Dell PowerEdge R630 server from a friend and decided to leverage it
 
 ## Project Plan
 
-### 1. Prepare the Environment
+### 1. Prepared the Environment
 
-- Buy a long enough patch cable: Done
-- Access iDRAC for the server on my home network: Done
-- Access virtual console - troubleshooting opening jnlp file with iced tea web
+- Bought a long enough cat6 patch cable to get from my router to the iDRAC port of the server.
+- Accessed iDRAC for the server on my home network - there were conflicts between a previous static ip and using DHCP so I set the static IP to one on my network
+- Accessed virtual console
+    - downloaded .jnlp file onto my laptop from iDRAC
+    - downgraded my JDK to 11 because modern Java versions deprecated the Java Web Start technology used by iDRAC.
+    - downloaded IcedTea-Web which includes the javaws command for opening jnlp files
+    - Set up Java Web Start with settings detailed in a private file
   
 ### 2. Install the Operating System
 
-- Use iDRAC to Download and install Ubuntu Server on the Dell PowerEdge R630.
-- Ensure all system updates are applied.
+- Used iDRAC to Download and install Ubuntu Server on the Dell PowerEdge R630.
+- Formatted the hard drive with 176 GB swap space in an LVM volume to handle the planned memory intensive tasks
 
 ### 3. Install Required Libraries
 
