@@ -26,12 +26,6 @@ I received a Dell PowerEdge R630 server from a friend and decided to leverage it
 - **Python Libraries:**
   - PyAudio (for audio input/output)
   - gTTS (for text-to-speech)
- 
-## Road blocks
-
-- Need to buy a longer patch cable so I can use iDRAC over the network.
-- Need to solve a mismatched PSU issue (suspect firmware)
-- Booting from USB failed, the server did not recognize the bootable media
 
 ## Project Plan
 
@@ -47,16 +41,25 @@ I received a Dell PowerEdge R630 server from a friend and decided to leverage it
   
 ### 2. Install the Operating System
 
+- Booting from USB failed, the server did not recognize the bootable media
 - Used iDRAC to Download and install Ubuntu Server on the Dell PowerEdge R630.
 - Formatted the hard drive with 176 GB swap space in an LVM volume to handle the planned memory intensive tasks
 
 ### 3. Install Required Libraries
 
+- Got permission to access Llama3 repos
+-  huggingface-cli login
+- entered token
 - Install IPEX-LLM, Transformers, Whisper.cpp, and PyAudio into a python enviroment.
 
 ### 4. Write scripts
 
 - Develop scripts for recording audio, transcribing speech, generating responses, and playing audio.
+
+
+## Misc.
+
+- Need to solve a mismatched PSU issue (suspect firmware)
 
 ## Conclusion
 
